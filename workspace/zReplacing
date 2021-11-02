@@ -1,0 +1,18 @@
+if DRC1M > DRC2M:
+            print("    "+str(DRE1+DRE2)+" + "+str(DRE3+DRE4)+" --> "+str(DRE1+DRE3)+"   "+str(DRE2+DRE4))
+            print("B:  "+str(DRC1M)+"   "+str(DRC2M)+" --> 0         0")
+            print("C: "+str(chr(45))+str(DRC2M)+"  "+str(chr(45))+str(DRC2M)+" --> +"+str(DRC2M)+"     +"+str(DRC2M))
+            print("A:  "+str(DRC1M-DRC2M)+"   "+str(int(0))+"   --> "+str(DRC2M)+"      "+str(DRC2M))
+            print(str(DRE3+DRE4)+" is the limiting reactant")
+        if DRC2M > DRC1M:
+            print("    "+str(DRE1+DRE2)+" + "+str(DRE3+DRE4)+" --> "+str(DRE1+DRE3)+"   "+str(DRE2+DRE4))
+            print("B:  "+str(DRC1M)+"   "+str(DRC2M)+" --> 0")
+            print("C: "+str(chr(45))+str(DRC1M)+"  "+str(chr(45))+str(DRC1M)+" --> +"+str(DRC2M)+"    +"+str(DRC2M))
+            print("A:  "+str(int(0))+"     "+str(float(DRC2M)-float(DRC1M))+" --> "+str(DRC2M)+"    "+str(DRC2M))
+            print(str(DRE1+DRE2)+" is the limiting reactant")
+        elif DRC2M == DRC1M:
+            print("    "+str(DRE1+DRE2)+" + "+str(DRE3+DRE4)+" --> "+str(DRE1+DRE3)+"   "+str(DRE2+DRE4))
+            print("B:  "+str(DRC1M)+"   "+str(DRC2M)+" --> 0     0")
+            print("C: "+str(chr(45))+str(DRC2M)+"  "+str(chr(45))+str(DRC2M)+" --> +"+str(DRC2M)+"    +"+str(DRC2M))
+            print("A:  "+str(int(0))+"     "+str(int(0))+"   --> "+str(DRC2M)+"     "+str(DRC2M))
+            print("There is no limiting reactant")

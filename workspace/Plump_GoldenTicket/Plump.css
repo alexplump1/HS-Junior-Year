@@ -1,0 +1,54 @@
+h1{
+    font-family: "Marker Felt", "Comic Sans MS", fantasy;
+    color: #003366;
+}
+table {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+tr   {
+    border: 1px solid #ffffff;
+    text-align: center;
+    background-color:#9FB6CD;
+}
+
+th   {
+    text-align: center;
+    color: #000000;
+    background-color: #003366;
+}
+td {
+    color:#ffffff;
+}
+.randomFoods{
+    color:#ff0000aa;
+    overflow: hidden;
+    font-weight: 900;
+}
+.DPTS{
+    color:#000080;
+    font-family:Arial;
+}
+.FNP{
+    font-size: large;
+}
+.color{
+    color:#303030ff;
+}
+.expensiveText{
+    color:#D4AF37;
+    /*text-decoration: blink;*/
+}
+.link{
+    color:#0000ffff;
+    text-decoration: underline;
+}
+.center{
+    text-align: center;
+}
+.largeText{
+    font-size: larger;
+}

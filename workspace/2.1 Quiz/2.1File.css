@@ -1,0 +1,23 @@
+body{
+    background-color:#1010b0;
+}
+    table{
+        border-color: #202020
+    }
+    th{
+        color:#ffffff;
+        font-size: large;
+        font-weight: bold;
+    }
+    td{
+        text-align: center;
+        color:#cc2020;
+        font-weight: bold
+    }
+    .price{
+        color:#ffff00;
+    }
+    .image{
+        height:70px;
+        width:90px;
+    }

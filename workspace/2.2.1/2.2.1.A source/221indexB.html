@@ -1,0 +1,274 @@
+<!--
+221indexB.html demonstrates basic JavaScript and CSS
+Unpublished work (c)2013 Project Lead The Way
+CSE Activity 2.2.1 HTML5andJavaScript
+Version 12/19/2013 
+-->
+<!doctype html>
+<html>
+	<head>
+		<title>Find Artist's Work</title>
+	<style>
+		#img1popout {
+			z-index: 5;
+			position: absolute;
+			width: 550px;
+			height: 300px;
+			top: 50px;
+			border: 1px dashed #000099;
+			background-color: #ddddff;
+		}
+		#img1popin{}
+		#img2popout {
+			z-index: 5;
+			position: absolute;
+			width: 550px;
+			height: 300px;
+			top: 50px;
+			border: 1px dashed #000099;
+			background-color: #ddddff;
+		}
+		#img2popin{}
+		#img3popout {
+			z-index: 5;
+			position: absolute;
+			width: 550px;
+			height: 300px;
+			top: 50px;
+			border: 1px dashed #000099;
+			background-color: #ddddff;
+		}
+		#img3popin{}
+		#img4popout {
+			z-index: 5;
+			position: absolute;
+			width: 550px;
+			height: 300px;
+			top: 50px;
+			border: 1px dashed #000099;
+			background-color: #ddddff;
+		}
+		#img4popin{}
+		#img5popout {
+			z-index: 5;
+			position: absolute;
+			width: 550px;
+			height: 300px;
+			top: 50px;
+			border: 1px dashed #000099;
+			background-color: #ddddff;
+		}
+		#img5popin{}
+		#img6popout {
+			z-index: 5;
+			position: absolute;
+			width: 550px;
+			height: 300px;
+			top: 50px;
+			border: 1px dashed #000099;
+			background-color: #ddddff;
+		}
+		#img6popin{}
+		#img7popout {
+			z-index: 5;
+			position: absolute;
+			width: 550px;
+			height: 300px;
+			top: 50px;
+			border: 1px dashed #000099;
+			background-color: #ddddff;
+		}
+		#img7popin{}
+		#img8popout {
+			z-index: 5;
+			position: absolute;
+			width: 550px;
+			height: 300px;
+			top: 50px;
+			border: 1px dashed #000099;
+			background-color: #ddddff;
+		}
+		#img8popin{}
+		#img9popout {
+			z-index: 5;
+			position: absolute;
+			width: 550px;
+			height: 300px;
+			top: 50px;
+			border: 1px dashed #000099;
+			background-color: #ddddff;
+		}
+		#img9popin{}
+		#img10popout {
+			z-index: 5;
+			position: absolute;
+			width: 550px;
+			height: 300px;
+			top: 50px;
+			border: 1px dashed #000099;
+			background-color: #ddddff;
+		}
+		#img10popin{}
+		
+		
+	</style>
+	<script type = "text/javascript">
+	var listOfImages = ["Image1","Image2"];
+		function initPopout()
+		{
+			var thumb1 = document.getElementById("image1");
+			var thumb2 = document.getElementById("image2");
+			var thumb3 = document.getElementById("image3");
+			var thumb4 = document.getElementById("image4");
+			var thumb5 = document.getElementById("image5");
+			var thumb6 = document.getElementById("image6");
+			var thumb7 = document.getElementById("image7");
+			var thumb8 = document.getElementById("image8");
+			var thumb9 = document.getElementById("image9");
+			var thumb10 = document.getElementById("image10");
+			thumb1.onmouseover = showDetailedView("pic1", "img1popin", "img1popout");
+			thumb2.onmouseover = showDetailedView("pic2", "img2popin", "img2popout");
+			thumb3.onmouseover = showDetailedView("pic3", "img3popin", "img3popout");
+			thumb4.onmouseover = showDetailedView("pic4", "img4popin", "img4popout");
+			thumb5.onmouseover = showDetailedView("pic5", "img5popin", "img5popout");
+			thumb6.onmouseover = showDetailedView("pic6", "img6popin", "img6popout");
+			thumb7.onmouseover = showDetailedView("pic7", "img7popin", "img7popout");
+			thumb8.onmouseover = showDetailedView("pic8", "img8popin", "img8popout");
+			thumb9.onmouseover = showDetailedView("pic9", "img9popin", "img9popout");
+			thumb10.onmouseover = showDetailedView("pic10", "img11popin", "img10popout");
+		}
+
+		function showDetailedView(image,imgpopin,imgpopout)
+		{	
+			
+			var im1 = document.getElementById(imgpopin);
+			im1.id = imgpopout;
+			if(image=="pic1"){
+				im1.innerHTML = "<br /><TABLE><TR><TH rowspan='3'><img src='aprilla/pic1.jpg' width='250'><TH align='left'>Artist's Name: <TH align='left'>Aprill Aronie<TR><TH align='left'>File Name: <TH align='left'>pic1.jpg<TR></TABLE> ";
+			}
+			if(image=="pic2"){
+				im1.innerHTML = "<br /><TABLE><TR><TH rowspan='3'><img src='aprilla/pic2.jpg' width='250'><TH align='left'>Artist's Name: <TH align='left'>Aprill Aronie<TR><TH align='left'>File Name: <TH align='left'>pic2.jpg<TR></TABLE> ";
+			}
+			if(image=="pic3"){
+				im1.innerHTML = "<br /><TABLE><TR><TH rowspan='3'><img src='aprilla/pic3.jpg' width='250'><TH align='left'>Artist's Name: <TH align='left'>Aprill Aronie<TR><TH align='left'>File Name: <TH align='left'>pic3.jpg<TR></TABLE> ";
+			}
+			if(image=="pic4"){
+				im1.innerHTML = "<br /><TABLE><TR><TH rowspan='3'><img src='aprilla/pic4.jpg' width='250'><TH align='left'>Artist's Name: <TH align='left'>Aprill Aronie<TR><TH align='left'>File Name: <TH align='left'>pic4.jpg<TR></TABLE> ";
+			}
+			if(image=="pic5"){
+				im1.innerHTML = "<br /><TABLE><TR><TH rowspan='3'><img src='aprilla/pic5.jpg' width='250'><TH align='left'>Artist's Name: <TH align='left'>Aprill Aronie<TR><TH align='left'>File Name: <TH align='left'>pic5.jpg<TR></TABLE> ";
+			}
+			if(image=="pic6"){
+				im1.innerHTML = "<br /><TABLE><TR><TH rowspan='3'><img src='aprilla/pic6.jpg' width='250'><TH align='left'>Artist's Name: <TH align='left'>Aprill Aronie<TR><TH align='left'>File Name: <TH align='left'>pic6.jpg<TR></TABLE> ";
+			}
+			if(image=="pic7"){
+				im1.innerHTML = "<br /><TABLE><TR><TH rowspan='3'><img src='aprilla/pic7.jpg' width='250'><TH align='left'>Artist's Name: <TH align='left'>Aprill Aronie<TR><TH align='left'>File Name: <TH align='left'>pic7.jpg<TR></TABLE> ";
+			}
+			if(image=="pic8"){
+				im1.innerHTML = "<br /><TABLE><TR><TH rowspan='3'><img src='aprilla/pic8.jpg' width='250'><TH align='left'>Artist's Name: <TH align='left'>Aprill Aronie<TR><TH align='left'>File Name: <TH align='left'>pic8.jpg<TR></TABLE> ";
+			}
+			if(image=="pic9"){
+				im1.innerHTML = "<br /><TABLE><TR><TH rowspan='3'><img src='aprilla/pic9.jpg' width='250'><TH align='left'>Artist's Name: <TH align='left'>Aprill Aronie<TR><TH align='left'>File Name: <TH align='left'>pic9.jpg<TR></TABLE> ";
+			}
+			if(image=="pic10"){
+				im1.innerHTML = "<br /><TABLE><TR><TH rowspan='3'><img src='aprilla/pic10.jpg' width='250'><TH align='left'>Artist's Name: <TH align='left'>Aprill Aronie<TR><TH align='left'>File Name: <TH align='left'>pi101.jpg<TR></TABLE> ";
+			}
+			im1.innerHTML = "<br /><TABLE><TR><TH rowspan='3'><img src='aprilla/pic1.jpg' width='250'><TH align='left'>Artist's Name: <TH align='left'>Aprill Aronie<TR><TH align='left'>File Name: <TH align='left'>pic1.jpg<TR></TABLE> ";
+			
+			var popOut = document.getElementById(imgpopout);
+			popOut.onmouseout = hideDetailedView(image, imgpopin, imgpopout);			
+		}
+		
+		function hideDetailedView(image, imgpopin, imgpopout){
+			if(image=="pic1"){var im1 = document.getElementById("img1popout");}
+			else if(image=="pic2"){var im1 = document.getElementById("img2popout");}
+			else if(image=="pic3"){var im1 = document.getElementById("img3popout");}
+			else if(image=="pic4"){var im1 = document.getElementById("img4popout");}
+			else if(image=="pic5"){var im1 = document.getElementById("img5popout");}
+			else if(image=="pic6"){var im1 = document.getElementById("img6popout");}
+			else if(image=="pic7"){var im1 = document.getElementById("img7popout");}
+			else if(image=="pic8"){var im1 = document.getElementById("img8popout");}
+			else if(image=="pic9"){var im1 = document.getElementById("img9popout");}
+			else if(image=="pic10"){var im1 = document.getElementById("img10popout");}
+			else{var im1 = document.getElementById("img1popout")
+				
+			}
+			//var im1 = document.getElementById("img1popout");
+			im1.id = imgpopin;
+			im1.innerHTML = "";
+		}
+	</script>
+</head>
+<body onload="initPopout();">
+<br>
+<table>
+	<caption>Your Results:</caption>
+	<tbody>
+	<tr>
+		<td>
+			<img alt="Image could not be displayed" id="image1" src="aprilla/pic1thumb.jpg"><div id = "img1popin"></div>
+		</td>
+		<td>
+			<img alt="Image could not be displayed" id="image2" src="aprilla/pic2thumb.jpg"><div id = "img2popin"></div>
+		</td>
+		<td>
+			<img alt="Image could not be displayed" id="image3" src="aprilla/pic3thumb.jpg"><div id = "img3popin"></div>
+		</td>
+		<td>
+			<img alt="Image could not be displayed" id="image4" src="aprilla/pic4thumb.jpg"><div id = "img4popin"></div>
+		</td>
+		<td>
+			<img alt="Image could not be displayed" id="image5" src="aprilla/pic5thumb.jpg"><div id = "img5popin"></div>
+		</td>
+		<td>
+			<img alt="Image could not be displayed" id="image6" src="aprilla/pic6thumb.jpg"><div id = "img6popin"></div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<img alt="Image could not be displayed" id="image7" src="aprilla/pic7thumb.jpg"><div id = "img7popin"></div>
+		</td>
+		<td>
+			<img alt="Image could not be displayed" id="image8" src="aprilla/pic8thumb.jpg"><div id = "img8popin"></div>
+		</td>
+		<td>
+			<img alt="Image could not be displayed" id="image9" src="aprilla/pic9thumb.jpg"><div id = "img9popin"></div>
+		</td>
+		<td>
+			<img alt="Image could not be displayed" id="image10" src="aprilla/pic10thumb.jpg"><div id = "img10popin"></div>
+		</td>
+		<td>
+			<img alt="Image could not be displayed" src="aprilla/pic11thumb.jpg">
+		</td>
+		<td>
+			<img alt="Image could not be displayed" src="aprilla/pic12thumb.jpg">
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<img alt="Image could not be displayed" src="aprilla/pic13thumb.jpg">
+		</td>
+		<td>
+			<img alt="Image could not be displayed" src="aprilla/pic14thumb.jpg">
+		</td>
+		<td>
+			<img alt="Image could not be displayed" src="aprilla/pic15thumb.jpg">
+		</td>
+	</tr>
+	</tbody>
+</table>
+<br>
+Search the art database using the fields below.
+<form method="post" action="index1.html">
+	<pre>
+First Name
+<input type="text" name="firstname">
+<br>
+Last Name
+<input type="text" name="lastname">
+<br>
+<input type="submit" value="SEARCH">
+	</pre>
+</form>
+</body>
+</html>
